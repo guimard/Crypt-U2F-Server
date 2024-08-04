@@ -1,0 +1,49 @@
+{
+   "abstract" : "Low level wrapper around the U2F two factor authentication C library (server side)",
+   "author" : [
+      "Rene Schickbauer <rene.schickbauer@magnapowertrain.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "ExtUtils::MakeMaker version 7.70, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "unknown"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Crypt-U2F-Server",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DynaLoader" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Authen::U2F::Tester" : "0.02",
+            "JSON::XS" : "0",
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "0.46",
+   "x_serialization_backend" : "JSON::PP version 4.16"
+}

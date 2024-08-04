@@ -1,0 +1,39 @@
+Revision history for Perl extension Crypt::U2F::Server.
+
+0.46  Thu May 02 14:16:31 2024 (GMT +2)
+    - Patch https://rt.cpan.org/Ticket/Display.html?id=150508
+      Fixes potential buffer overflow
+
+0.45  Sat May 04 14:59:57 2019 (GMT +2)
+	- Fix refcount warning when multiples instances of the
+	  Crypt::U2F::Server::Simple object are created (RT#129435).
+	  Thanks to Colin Newell
+
+0.44  Sun Apr 28 15:37:45 2019 (GMT +2)
+	- Fix segfaults if u2fclib_verifyRegistration returns 0 (RT#129341).
+	  Thanks to Colin Newell
+
+0.43  Mon Apr 18 14:21:25 2018 (GMT +2)
+	- Fix typo in POD
+	- Add "debug" option
+
+0.42  Fri Mar 30 06:55:34 2018 (GMT +2)
+	- Fix tests dependencies (RT#124973, RT#124974)
+
+0.41  Thu Mar 29 21:50:00 2018 (GMT +2)
+	- Fix RT#114597: Doesn't handle public keys with null chars in them
+
+0.40  Sat May 07 14:00:00 2015
+	- Removed debug output (Thanks, Robert!)
+	- Allow installation from 5.8.8 upwards (Thanks, Robert!)
+
+0.31  Tue Feb 04 14:00:00 2015
+	- Bugfixes
+    - remove unneeded files from Manifest and dist
+
+0.30  Tue Feb 03 15:00:00 2015
+	- Rename from Crypt::U2F to Crypt::U2F::Server because of imminent
+	  release of the client module
+
+0.10  Wed Dec 17 17:00:00 2014
+	- Initial alpha release
